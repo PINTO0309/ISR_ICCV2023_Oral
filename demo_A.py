@@ -39,8 +39,7 @@ class Data_Processor(object):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='demo A')
-    parser.add_argument('--model-weight', type=str, default='./swin_base_patch4_window7_224.pth',
-                        help='the path of model weight')
+    parser.add_argument('--model-weight', type=str, default='./swin_base_patch4_window7_224.pth', help='the path of model weight')
     parser.add_argument('--image1', type=str, default='./image1.jpg', help='the path of image 1')
     parser.add_argument('--image2', type=str, default='./image2.jpg', help='the path of image 2')
     args = parser.parse_args()
