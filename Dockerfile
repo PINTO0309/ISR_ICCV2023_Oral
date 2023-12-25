@@ -19,8 +19,9 @@ RUN pip install pip -U \
     && pip install \
         timm==0.4.12 \
         onnx==1.15.0 \
-        onnxsim==0.4.33 \
-        onnxruntime-gpu==1.16.1
+        onnxsim==0.4.30 \
+        onnxruntime-gpu==1.16.1 \
+        sit4onnx==1.0.7
 
 ENV USERNAME=user
 RUN echo "root:root" | chpasswd \
